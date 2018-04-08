@@ -23,10 +23,10 @@
   <g:layoutBody />
   <!--
   <footer class="footer mt-5" style="background-color: rgb(50, 50, 50);">
-      <div class="container px-3 py-4">
-        Marca registrada
+      <div class="container p-3 text-light">
+        Marca registrada TM
       </div>
   </footer>
-  --->
+  -->
 </body>
 </html>

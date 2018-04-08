@@ -39,7 +39,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Mis denuncias</a>
-            <a class="dropdown-item" href="#">Denuncias</a>
+            <a class="dropdown-item" href="#">Denuncias en México</a>
           </div>
         </li>
         <li class="nav-item dropdown custom-navbar-item">
@@ -54,9 +54,22 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Log in</a>
+        <sec:ifLoggedIn>
+        <li class="nav-item dropdown custom-navbar-item">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="custom-navbar-link"><sec:loggedInUserInfo field='username'/></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Mis datos</a>
+            <a class="dropdown-item" href="/logoff">Salir</a>
+          </div>
         </li>
+        </sec:ifLoggedIn>
+        <sec:ifNotLoggedIn>
+        <li class="nav-item">
+          <a class="nav-link" href="/login/auth">Log in</a>
+        </li>
+        </sec:ifNotLoggedIn>
       </ul>
     </div>
   </nav>
