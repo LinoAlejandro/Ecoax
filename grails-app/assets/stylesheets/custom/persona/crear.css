@@ -1,0 +1,12 @@
+body  {
+  background-color: #282828;
+}
+
+.login-box {
+  background-color: rgba(40,40,40,0.2);
+}
+
+.leaf-text {
+  font-size: 15px;
+  color: #cbffad;
+}

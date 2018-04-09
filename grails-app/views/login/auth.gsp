@@ -4,6 +4,13 @@
   <asset:stylesheet  src="custom/login/auth.css" rel="stylesheet" media="screen" />
 </head>
 <body>
+	<g:if test="${flash.message}">
+		<div class="alert alert-success">
+			${flash.message}
+		</div>
+	</g:if>
+
+
   <div class="container mt-5 pt-4">
     <div class="row justify-content-center">
       <div class="col-xl-4 col-lg-6 col-md-6 col-sm-8 justify-content-center rounded pt-5 login-box">
@@ -15,7 +22,6 @@
 						<asset:image class="img-thumbnail bg-light rounded-circle" width="75px" src="logoLeaf.png"/>
 					</a>
         </div>
-
         <div class="mx-auto px-2 pb-5 pt-4">
           <form action="/login/authenticate" method="POST" id="loginForm" autocomplete="off">
             <div class="input-group mb-3">
@@ -39,7 +45,7 @@
 							<a class="d-block btn text-dark btn-md mb-3 custom-input-button">Login<a/>
             </div>
             <div class="">
-              <a class="d-block btn text-dark btn-md" style="background-color: #99FF5E;">Crear cuenta<a/>
+              <a class="d-block btn text-dark btn-md" style="background-color: #99FF5E;" href="/persona/crear">Crear cuenta<a/>
             </div>
       		</form>
         </div>
