@@ -1,5 +1,5 @@
 body  {
-  background: linear-gradient(to left, #99FF5E 0%,#99FF5E 50%,#99FF5E 50%,#DFE0E1 50%,#DFE0E1 100%); /* W3C */
+  background: #DFE0E1 100% /* W3C */
 }
 
 .login-box {
@@ -7,6 +7,6 @@ body  {
   border: solid 1px #DFE0E1
 }
 
-.custom-input-button {
-  background: #99FF5E !important;
+.custom-button:hover {
+  background-color: #020202;
 }

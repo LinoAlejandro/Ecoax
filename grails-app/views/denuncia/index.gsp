@@ -6,7 +6,7 @@
 </head>
 <body>
   <div class="jumbotron">
-    ok
+    
   </div>
 </body>
 </html>

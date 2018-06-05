@@ -1,9 +1,9 @@
 package com.ecoax
 
-import grails.testing.gorm.DomainUnitTest
+import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class UsuarioSpec extends Specification implements DomainUnitTest<Usuario> {
+class DependenciaControllerSpec extends Specification implements ControllerUnitTest<DependenciaController> {
 
     def setup() {
     }

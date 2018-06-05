@@ -20,6 +20,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md col-sm-12">
+								<input type="hidde" name="persona.id" value="${this.persona?.id}">
                 <div class="form-group">
                   <label for="username" id="username">Username</label>
                   <input class="form-control" type="text" name="username" value="${this.persona?.username}">
@@ -79,7 +80,7 @@
       </div>
     </div>
   </div>
-	<div class="container">
+			<div class="container">
 			<g:eachError bean="${this.persona}" var="error">
 		    <li class="d-block mx-auto text-light text-center">
 					<g:if test="${error in org.springframework.validation.FieldError}">
@@ -88,7 +89,7 @@
 				</li>
 		    <script type="text/javascript">
 		      var field = document.getElementById('${error.getField()}')
-		      field.classList.add('text-danger')
+		      field.classList.add('border-danger')
 		    </script>
 		  </g:eachError>
 			<asset:javascript src="custom/persona/modificar.js" />

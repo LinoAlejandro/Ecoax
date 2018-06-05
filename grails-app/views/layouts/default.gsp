@@ -20,7 +20,7 @@
   <g:layoutHead />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark px-5 custom-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark px-5" style="background-color:#282828;">
     <a clasS="navbar-brand" href="/">
       <asset:image class="mr-2" width="30px" height="30px" src="logoLeaf.png"/>
       <span class="custom-navbar-link">Ecoax</span>
@@ -34,7 +34,9 @@
           <a class="nav-link" href="/"><span class="custom-navbar-link">Inicio</span></a>
         </li>
         <li class="nav-item custom-navbar-item">
-          <a class="nav-link" href="/"><span class="custom-navbar-link">Crear denuncia</span></a>
+          <g:link action="create" controller="denuncia" class="nav-link">
+            <span class="custom-navbar-link">Crear denuncia</span>
+          </g:link>
         </li>
         <li class="nav-item dropdown custom-navbar-item">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -80,41 +82,9 @@
     </div>
   </nav>
 
-
-    <div class="container mt-5">
-      <div class="jumbotron text-light" style="border-bottom: 1px solid black; background-color: #323232;">
-        <div class="display-3 d-flex align-items-center">
-          <span class="">Bienvenido a ecoax</span>
-          <asset:image class="ml-lg-5 ml-md-2 ml-sm-1" width="80px" src="logoLeaf.png"/>
-        </div>
-        <hr class="bg-light">
-        <div class="lead" style="color: #cbffad">
-          Plataforma de denuncias ambientales en línea para los habitantes de la república mexicana.
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-2">
-      <div class="row justify-content-center align-items-center">
-        <div class="col">
-          <p class="display-5 text-center">Las denuncias pueden ser generadas de forma pública o privada</p>
-          <p class="lead">
-            <a class="d-block btn btn-lg text-dark mx-auto" href="#" style="background-color: rgb(153, 255, 94);">Crear denuncia</a>
-          </p>
-        </div>
-        <div class="col-1 d-flex justify-content-center">
-          <div style="background-color:#323232;height:150px; width:2px;border-radius:2px;"></div>
-        </div>
-        <div class="col">
-          <p class="display-5 text-center">Si tiene problemas con la plataforma puede consultar el manual de usuario</p>
-          <a class="d-block btn btn-lg text-dark" href="#" style="background-color: rgb(153, 255, 94);">Manual de usuario</a>
-        </div>
-      </div>
-    </div>
-    
   <g:layoutBody />
 
-  <footer class="footer mt-5" style="background-color: rgb(50, 50, 50);">
+  <footer class="footer mt-5" style="background-color: #282828;">
       <div class="container px-3 py-2">
         Marca registrada
       </div>

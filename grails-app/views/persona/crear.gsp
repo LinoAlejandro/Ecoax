@@ -26,7 +26,7 @@
   <div class="container mt-4">
     <div class="row justify-content-center">
       <div class="col text-light rounded login-box">
-        <g:form controller="persona" action="save" method="POST">
+        <g:form action="crear" method="POST">
           <div class="container">
             <div class="row">
               <div class="col-md col-sm-12">

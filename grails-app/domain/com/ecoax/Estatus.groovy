@@ -1,7 +1,7 @@
 package com.ecoax
 
 class Estatus {
+    String descripcion
 
-    static constraints = {
-    }
+    static hasMany = [ denuncias:Denuncia ]
 }
